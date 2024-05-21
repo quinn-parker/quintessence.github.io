@@ -3,39 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuel Guide</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Training Guides</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .filter {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .filter button {
+            background-color: #444;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 2px;
+            cursor: pointer;
+        }
+        .guides {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 1000px;
+        }
+        .guide {
+            background-color: #ccc;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .guide:hover {
+            background-color: #bbb;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#guides">Fuel Guides</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h1>Fuel Guide</h1>
-        <p>Optimize your training with our comprehensive fuel guides.</p>
-    </section>
-    <section id="guides">
-        <h2>Fuel Guides</h2>
-        <div class="filter">
-            <button data-filter="all">All</button>
-            <button data-filter="running">Running</button>
-            <button data-filter="cycling">Cycling</button>
-            <button data-filter="triathlon">Triathlon</button>
-        </div>
-        <div class="guides-list">
-            <!-- Fuel guide items go here -->
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Maurten. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <div class="filter">
+        <button>Running</button>
+        <button>Cycling</button>
+        <button>Triathlon</button>
+        <button>Training</button>
+        <button>Racing</button>
+    </div>
+
+    <div class="guides">
+        <div class="guide" onclick="location.href='road.html'">Road</div>
+        <div class="guide" onclick="location.href='ultra_cycling.html'">Ultra cycling</div>
+        <div class="guide" onclick="location.href='ftp_test.html'">FTP test</div>
+        <div class="guide" onclick="location.href='long_ride.html'">Long ride</div>
+        <div class="guide" onclick="location.href='easy_recovery.html'">Easy/Recovery</div>
+        <div class="guide" onclick="location.href='flemish_classics.html'">Flemish Classics</div>
+        <div class="guide" onclick="location.href='ardennes_classics.html'">Ardennes Classics</div>
+        <div class="guide" onclick="location.href='sprint_specific.html'">Sprint specific</div>
+        <div class="guide" onclick="location.href='long_climb.html'">Long climb</div>
+        <div class="guide" onclick="location.href='over_under_intervals.html'">Over/Under intervals</div>
+        <div class="guide" onclick="location.href='40_20s_intervals.html'">40/20s intervals</div>
+        <div class="guide" onclick="location.href='vo2_max_intervals.html'">VO2 Max intervals</div>
+        <div class="guide" onclick="location.href='sweetspot_training.html'">Sweetspot training</div>
+        <div class="guide" onclick="location.href='marathon.html'">Marathon</div>
+        <div class="guide" onclick="location.href='5_10_km.html'">5-10 km</div>
+        <div class="guide" onclick="location.href='half_marathon.html'">Half marathon</div>
+        <div class="guide" onclick="location.href='ultra_distance.html'">Ultra distance</div>
+        <div class="guide" onclick="location.href='long_run.html'">Long run</div>
+        <div class="guide" onclick="location.href='tempo.html'">Tempo</div>
+        <div class="guide" onclick="location.href='uphill.html'">Uphill</div>
+        <div class="guide" onclick="location.href='easy_recovery_run.html'">Easy/Recovery</div>
+        <div class="guide" onclick="location.href='fartlek.html'">Fartlek</div>
+        <div class="guide" onclick="location.href='progressive_long_run.html'">Progressive Long Run</div>
+        <div class="guide" onclick="location.href='threshold_intervals.html'">Threshold or tempo intervals</div>
+        <div class="guide" onclick="location.href='vo2_max_run.html'">VO2 Max</div>
+        <div class="guide" onclick="location.href='time_trials.html'">Time trials</div>
+        <div class="guide" onclick="location.href='lactate_tolerance.html'">Lactate tolerance</div>
+        <div class="guide" onclick="location.href='hill_repeats.html'">Hill repeats</div>
+        <div class="guide" onclick="location.href='sprints.html'">Sprints</div>
+        <div class="guide" onclick="location.href='sprint_distance.html'">Sprint distance</div>
+        <div class="guide" onclick="location.href='olympic_distance.html'">Olympic distance</div>
+        <div class="guide" onclick="location.href='middle_distance.html'">Middle distance</div>
+        <div class="guide" onclick="location.href='long_distance.html'">Long distance</div>
+    </div>
+
 </body>
 </html>
