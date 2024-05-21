@@ -1,1 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.filter button {
+    margin: 5px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background: #444;
+}
+
+.guides-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.guides-list .guide-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
